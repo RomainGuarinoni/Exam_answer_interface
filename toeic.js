@@ -9,14 +9,12 @@ let d_button = document.getElementById("d");
 let already_begin=false;
 let question =1;
 let question_number;
-let answer_tab;
 
 document.getElementById("submit_button").addEventListener('click',function(event){
     event.stopPropagation;
     if(document.getElementById("number").value!=""){
         question_number=document.getElementById("number").value;
         document.getElementById("begin").disabled=false;
-        console.log(document.getElementById("number").value)
     }
 });
 
@@ -28,10 +26,9 @@ start_button.addEventListener('click',function(){
     document.getElementById("main").style.height="auto";
     document.getElementById("section").style.display="block";
     document.getElementById("question_number").innerHTML=question;
-    answer_tab = new Array(question_number);
-    for(let i=0;i<=question_number;i++){
+    for(let i=0;i<question_number;i++){
         let p = document.createElement('p');
-        p.classList.add("p");
+        p.classList.add("p_answer");
         document.getElementById("result_box").appendChild(p);
         let span = document.createElement('span');
         span.classList.add('span_question');
@@ -65,14 +62,11 @@ const previous=()=>{
     }
 }
 const display_answer=(question, answer)=>{
-    span_question_array[question].innerHTML=question;
-    tiret_array[question].innerHTML= " - ";
-    span_answer_array[question].innerHTML=answer;
+    span_question_array[question-1].innerHTML=question;
+    tiret_array[question-1].innerHTML= " - ";
+    span_answer_array[question-1].innerHTML=answer;
 }
 
-const add_answer=(question, answer)=>{
-    answer_tab[question-1]=answer;
-}
 next_button.addEventListener('click',function(event){
     next();
     event.stopPropagation;
@@ -82,43 +76,36 @@ previous_button.addEventListener('click', function(event){
     event.stopPropagation;
 });
 a_button.addEventListener('click',function(event){
-    add_answer(question, "A");
     event.stopPropagation;
-    console.log(answer_tab);
     display_answer(question, "A");
     next();
 });
 b_button.addEventListener('click',function(event){
-    add_answer(question, "B");
     event.stopPropagation;
-    console.log(answer_tab);
     display_answer(question, "B");
     next();
 });
 c_button.addEventListener('click',function(event){
-    add_answer(question, "C");
     event.stopPropagation;
-    console.log(answer_tab);
     display_answer(question, "C");
     next();
 });
 d_button.addEventListener('click',function(event){
-    add_answer(question, "D");
     event.stopPropagation;
-    console.log(answer_tab);
     display_answer(question, "D");
     next();
 });
 
 document.getElementById("stop").addEventListener('click',function(){
-    let p = document.getElementsByClassName("p");
-    console.log(question_number);
-    for(let i=0;i<question_number;i++){
-        console.log(i);
-        console.log(p[i]);
-        let supp=p[i];
-        document.getElementById("result_box").removeChild(supp);
+    var p_list = document.getElementsByTagName("p");
+    for(var i=p_list.length-1; i>=0; i--){
+        var p = p_list[i];
+        if(p.className === "p_answer"){
+            p.parentNode.removeChild(p);
+        }
     }
-    
-    
+    stop_button.disabled=true;
+    start_button.disabled=true;
+    document.getElementById("section").style.display="none";
+    document.getElementById("form").style.display="block";
 });
