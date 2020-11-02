@@ -4,7 +4,7 @@ Cette petite application permet de de noter les réponses d'un test et de les sa
 
 Initialement crée pour l'examen du Toeic, cette application peut également être utilisé pour tout type de tests a **choix mulitples**.
 
-##Comment ça marche ?
+## Comment ça marche ?
 
 1. Selectionner le **nombre de questions à répondre** et cliquez sur **commencer les test**
 2. Répondez aux questions en cliquant surt les boutons. Vous pouvez toujours **changer vos réponses** ou **sauter des questions** à votre guise.
