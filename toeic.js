@@ -10,17 +10,11 @@ let already_begin=false;
 let question =1;
 let question_number;
 
-document.getElementById("submit_button").addEventListener('click',function(event){
-    event.stopPropagation;
+start_button.addEventListener('click',function(){
     if(document.getElementById("number").value!=""){
         question_number=document.getElementById("number").value;
         document.getElementById("begin").disabled=false;
-    }
-});
-
-
-start_button.addEventListener('click',function(){
-    stop_button.disabled=false;
+        stop_button.disabled=false;
     start_button.disabled=true;
     document.getElementById("form").style.display="none";
     document.getElementById("main").style.height="auto";
@@ -41,6 +35,7 @@ start_button.addEventListener('click',function(){
         p.appendChild(span2);
     }
     already_begin=true;
+    } 
 });
 let span_question_array=document.getElementsByClassName("span_question");
 let span_answer_array = document.getElementsByClassName("span_answer");
