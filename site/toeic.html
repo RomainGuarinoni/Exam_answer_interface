@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>toeic test sheet</title>
+        <link rel="stylesheet" href="toeic.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main id="main">
+            <div id="main_title">
+                <h1>Toeic Test</h1><hr/>
+            </div>
+            <div id="form">
+                <form>
+                    <label for="number">Nombre de questions :</label>
+                    <div class="input_box">
+                        <input type="number" min="0" id="number" name="number" >
+                    </div>
+                    </form>
+            </div>
+            <div class="button_main">
+                <button class="select" id="begin" >Commencer le test</button>
+                <button class="select" id="stop" disabled>Terminer le test</button>
+            </div>
+            <section id="section">
+                <div id="question">
+                    <h2>Question : <span id="question_number"></span></h2>
+                    <p id="end">Le test est terminé</p>
+                </div>
+                <div id="select_button">
+                    <button class="select" id="previous">Précedent</button>
+                    <button class="select" id="next">Suivant</button>
+                </div>
+                <div class="box_button">
+                    <div class="button">
+                        <button class= "big_button" id="a">A</button>
+                        <button class= "big_button" id="b">B</button>
+                    </div>
+                    <div class="button">
+                        <button class= "big_button" id="c">C</button>
+                        <button class= "big_button" id="d">D</button>
+                    </div>
+                </div>
+                <div id="result">
+                    <div id="result_box">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="toeic.js"></script>
+    </body>
+</html>
