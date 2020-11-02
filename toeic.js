@@ -15,27 +15,26 @@ start_button.addEventListener('click',function(){
         question_number=document.getElementById("number").value;
         document.getElementById("begin").disabled=false;
         stop_button.disabled=false;
-    start_button.disabled=true;
-    document.getElementById("form").style.display="none";
-    document.getElementById("main").style.height="auto";
-    document.getElementById("section").style.display="block";
-    document.getElementById("question_number").innerHTML=question;
-    for(let i=0;i<question_number;i++){
-        let p = document.createElement('p');
-        p.classList.add("p_answer");
-        document.getElementById("result_box").appendChild(p);
-        let span = document.createElement('span');
-        span.classList.add('span_question');
-        let tiret = document.createElement('span');
-        tiret.classList.add("tiret");
-        let span2=document.createElement('span');
-        span2.classList.add('span_answer');
-        p.appendChild(span);
-        p.appendChild(tiret);
-        p.appendChild(span2);
+        start_button.disabled=true;
+        document.getElementById("form").style.display="none";
+        document.getElementById("main").style.height="auto";
+        document.getElementById("section").style.display="block";
+        document.getElementById("question_number").innerHTML=question;
+        for(let i=0;i<question_number;i++){
+            let p = document.createElement('p');
+            p.classList.add("p_answer");
+            document.getElementById("result_box").appendChild(p);
+            let span = document.createElement('span');
+            span.classList.add('span_question');
+            let tiret = document.createElement('span');
+            tiret.classList.add("tiret");
+            let span2=document.createElement('span');
+            span2.classList.add('span_answer');
+            p.appendChild(span);
+            p.appendChild(tiret);
+            p.appendChild(span2);
+        } 
     }
-    already_begin=true;
-    } 
 });
 let span_question_array=document.getElementsByClassName("span_question");
 let span_answer_array = document.getElementsByClassName("span_answer");
@@ -103,4 +102,6 @@ document.getElementById("stop").addEventListener('click',function(){
     start_button.disabled=false;
     document.getElementById("section").style.display="none";
     document.getElementById("form").style.display="block";
+    document.getElementById("end").style.display="none";
+    question=1;
 });
