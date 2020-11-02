@@ -100,7 +100,7 @@ document.getElementById("stop").addEventListener('click',function(){
         }
     }
     stop_button.disabled=true;
-    start_button.disabled=true;
+    start_button.disabled=false;
     document.getElementById("section").style.display="none";
     document.getElementById("form").style.display="block";
 });
