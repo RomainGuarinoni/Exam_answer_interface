@@ -1,0 +1,112 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+    --primary_color: rgb(180, 26, 26);
+    --secondary_color: rgb(71, 69, 69);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+button{
+    background-color: rgb(245, 240, 240);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: background-color ease 300ms;
+}
+#selct_button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button_main{
+    display: flex;
+    flex-wrap: wrap;
+}
+button:hover{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
+    background-color: rgba(22, 22, 22, 0.479);
+    color: white;
+}
+.big_button{
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    
+}
+#question{
+    text-align: center;
+}
+h1{
+    color: var(--primary_color);
+    font-size: 4em;
+}
+
+.select{
+    height: 50px;
+    margin: 10px;
+    width: 150px;
+}
+.box_button{
+    margin-top: 30px;
+}
+section{
+    display: none;
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+}
+#result_box{
+    text-align: center;
+}
+.span_question, .span_answer, .tiret{
+    font-size: 1.5em;
+}
+#end{
+    font-size: 1.8em;
+    color: red;
+    display: none;
+}
+.input_box{
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+input{
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+}
+
+
+#advanced_option{
+    display: none;
+    padding: 10px 5px 10px 5px;
+    text-align: left;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#box_main{
+    width: 150px;
+    text-align: center;    
+}
+.color_box{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
