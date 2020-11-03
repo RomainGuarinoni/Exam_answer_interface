@@ -6,18 +6,25 @@
         <link rel="stylesheet" href="toeic.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="body">
         <main id="main">
             <div id="main_title">
                 <h1>Toeic Test</h1><hr/>
             </div>
             <div id="form">
-                <form>
-                    <label for="number">Nombre de questions :</label>
-                    <div class="input_box">
-                        <input type="number" min="0" id="number" name="number" >
-                    </div>
-                    </form>
+                
+                <label for="number">Nombre de questions :</label>
+                <div class="input_box" id="box_main">
+                    <input type="number" min="0" id="number" name="number" placeholder="number" >
+                </div>
+                <button id="wtf">Option avancées</button>
+                <div id="advanced_option">
+                    <label for="depart_question">numéro de départ : </label><span class="input_box"><input id="depart_question" name="depart_question" type="number"></span> <br/>
+                    <label for="pas">pas des questions : </label><span class="input_box"><input id="pas" name="pas" type="number"></span><br/>
+                    <div class="color_box"><label for="color">Couleur des réponses: </label><span class=""><input id="color" name="color" type="color"></span><br/></div>
+                    <label for="dark">Dark mode :  </label><span class=""><input id="dark" name="dark" type="checkbox"></span>
+                </div>
+                
             </div>
             <div class="button_main">
                 <button class="select" id="begin" >Commencer le test</button>
