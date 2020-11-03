@@ -1,6 +1,6 @@
 # Exam Answer Interface
 
-Cette petite application permet de noter les réponses d'un test et de les sauvegarder. Cela empêche de devoirs écrire les réponses sur du papier ( ce qui peut être long et fastidieux pour les longs exam).
+Cette petite application permet de noter les réponses d'un QCM et de les sauvegarder. Cela évite de devoir les écrire sur du papier ( ce qui peut être long et fastidieux pour de longs exam).
 
 Initialement crée pour l'examen du Toeic, cette application peut également être utilisé pour tout type de tests a **choix mulitples**.
 

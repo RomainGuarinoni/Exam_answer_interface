@@ -28,7 +28,7 @@ document.getElementById("wtf").addEventListener('click',function(){
 document.getElementById("dark").addEventListener('click',function(){
     if(document.getElementById("dark").checked==true){
         //modif dark mode
-        document.getElementById("body").style.background="black";
+        document.getElementById("body").style.background="#252626";
         document.getElementById("body").style.color="white"
         document.getElementById("number").style.color="white";
         document.getElementById("depart_question").style.color="white";
