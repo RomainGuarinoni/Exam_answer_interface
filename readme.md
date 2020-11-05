@@ -12,4 +12,5 @@ Initialement crée pour l'examen du Toeic, cette application peut également êt
 2. Répondez aux questions en cliquant surt les boutons. Vous pouvez toujours **changer vos réponses** ou **sauter des questions** à votre guise.
 3. Pour supprimer le test, cliquez sur **Terminer le test** et vous pouvez en commencer un nouveau. ( Notez que si vous commencer un nouveau test, vos anciennes réponses ne sont plus sauvegardées).
 
+![image 1](images/Capture1.JPG)
 **crée par Romain Guarinoni**
