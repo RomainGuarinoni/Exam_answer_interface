@@ -103,7 +103,7 @@ const next=()=>{
     else {
         question+=pas;
         document.getElementById("question_number").innerHTML=question;
-        id_array=(question-const_question)/pas;
+        id_array=(question-const_question)/pas
     }
 }
 const previous=()=>{
@@ -118,7 +118,6 @@ const display_answer=(question, answer)=>{
     span_question_array[id_array].innerHTML=question;
     tiret_array[id_array].innerHTML= " - ";
     span_answer_array[id_array].innerHTML=answer;
-    console.log(id_array);
 }
 
 next_button.addEventListener('click',function(event){
